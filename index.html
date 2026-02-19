@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>لوحة رمضان 1447هـ — الرياض</title>
+<title>رمضان 1447هـ — الرياض</title>
 <style>
 
 @font-face{
@@ -138,6 +138,70 @@ font:inherit;line-height:1.8;resize:vertical;}
 @media (max-width:980px){.prayers{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:900px){.bottom{grid-template-columns:1fr;}.divider{display:none !important;}}
 @media (max-width:560px){.day{font-size:14px;border-radius:18px;}.calendar{gap:10px;}.bigDay{font-size:56px;}.temp{font-size:34px;}}
+
+/* ===== Mobile Optimization (No Design Change) ===== */
+@media (max-width:768px){
+
+  .container{
+    padding:18px 14px 28px;
+  }
+
+  .headerTop{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+  }
+
+  .logo{
+    width:64px;
+    height:64px;
+  }
+
+  .bigDay{
+    font-size:48px;
+  }
+
+  .temp{
+    font-size:30px;
+  }
+
+  .prayers{
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+
+  .calendar{
+    gap:10px;
+  }
+
+  .day{
+    font-size:14px;
+    border-radius:18px;
+  }
+
+  .bottom{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .prayers{
+    grid-template-columns:1fr;
+  }
+
+  .bigDay{
+    font-size:42px;
+  }
+
+  .temp{
+    font-size:26px;
+  }
+
+}
+
 </style>
 </head>
 <body>
